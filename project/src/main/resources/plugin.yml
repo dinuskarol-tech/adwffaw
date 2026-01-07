@@ -1,0 +1,10 @@
+name: MyPlugin
+  version: 1.0
+  main: me.yourname.myplugin.Main
+  description: A test plugin
+  api-version: 1.19
+  author: YourName
+  commands:
+    testcommand:
+      description: A test command
+      usage: /testcommand
