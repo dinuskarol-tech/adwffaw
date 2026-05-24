@@ -1,0 +1,17 @@
+profile: default
+workspaceRules:
+  - "Always preview diffs before write operations."
+  - "Run tests after code changes."
+sandbox:
+  enabled: true
+  blockedCommands:
+    - "rm -rf /"
+    - "mkfs"
+    - "shutdown"
+    - "reboot"
+  requireConfirmation: true
+models:
+  preferred: qwen3-coder
+  fallback: [deepseek-coder, llama3, codellama, glm, mistral]
+  temperature: 0.2
+  contextWindow: 32000
