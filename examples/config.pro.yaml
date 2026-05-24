@@ -1,0 +1,13 @@
+profile: pro
+workspaceRules:
+  - "Strict git hygiene."
+  - "No command execution without policy checks."
+sandbox:
+  enabled: true
+  blockedCommands: ["rm -rf /", "dd if=", "mkfs", "poweroff"]
+  requireConfirmation: true
+models:
+  preferred: deepseek-coder
+  fallback: [qwen3-coder, codellama, mistral]
+  temperature: 0.1
+  contextWindow: 65536
